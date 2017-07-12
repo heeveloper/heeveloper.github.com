@@ -3,7 +3,7 @@ layout: post
 title:  "Handle the untracked"
 date:   2017-07-10 14:42:29
 categories: Git
-excerpt: Git, Github, .gitignore, untracked
+tags: Git Github .gitignore untracked
 ---
 
 Git으로 프로젝트를 관리하다가 새로 추가한 directory나 file이 추적되지 않을 때가 있다.

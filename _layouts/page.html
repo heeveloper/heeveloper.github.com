@@ -1,19 +1,28 @@
 ---
 layout: default
 ---
-<div class="post-area post">
-    <header>
-        <h1>{{ page.title }}</h1>
-    </header>
-    <hr>
-    <article class="page-content">
-        {{ content }}
-    </article>
-</div>
-<div class="post-area post comment">
-    <!-- 多说评论框 start -->
 
-    <div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" data-url="heeveloper.github.io{{ page.url }}"></div>
+<div class="page clearfix" post>
+    <div class="left">
+        <h1>{{page.title}}</h1>
+        <hr>
+        {{content}}
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
 
-    <!-- 多说评论框 end -->
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
 </div>
+<script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
