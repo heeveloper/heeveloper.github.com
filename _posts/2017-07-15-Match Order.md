@@ -5,7 +5,7 @@ date:   2017-07-15 23:42:29
 author: Heeveloper
 categories: Algorithm
 tags: 프로그래밍대회에서배우는알고리즘문제해결전략 Algospot 알고스팟 MATCHORDER 출전순서정하기 탐욕법 greedy
-excerpt: MATCH ORDER
+excerpt: MATCHORDER
 mathjax : false
 ---
 

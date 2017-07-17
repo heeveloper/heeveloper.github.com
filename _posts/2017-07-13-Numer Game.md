@@ -5,7 +5,7 @@ date:   2017-07-13 23:42:29
 author: Heeveloper
 categories: Algorithm
 tags: 프로그래밍대회에서배우는알고리즘문제해결전략 Algospot 알고스팟 NUMERGAME 숫자게임 dp 동적계획법 메모이제이션 memoization
-excerpt: NUMBER GAME
+excerpt: NUMBERGAME
 mathjax : false
 ---
 
