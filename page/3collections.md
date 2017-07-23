@@ -23,6 +23,9 @@ This pages handle algorithm problems presented in the book "프로그래밍 대�
 * MATCHORDER
 * STRJOIN
 * TrainingSeason (BOJ)
+* DICTIONARY
+* GALLERY
+
 
 
 ## Others
