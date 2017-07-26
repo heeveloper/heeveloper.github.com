@@ -22,10 +22,11 @@ This pages handle algorithm problems presented in the book "프로그래밍 대�
 * LUNCHBOX
 * MATCHORDER
 * STRJOIN
-* TrainingSeason (BOJ)
+* 연습시즌 (BOJ)
 * DICTIONARY
 * WORDCHAIN
 * GALLERY
+* 징검다리 (SCPC)
 
 
 ## Others

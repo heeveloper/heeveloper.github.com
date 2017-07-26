@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "연습경기"
+title:  "연습시즌"
 date:   2017-07-15 23:48:29
 author: Heeveloper
 categories: Algorithm
-tags: BOJ 백준온라인 9023 TrainingSeason 연습경기 dp 동적계획법 메모이제이션 memoization
+tags: BOJ 백준온라인 9023 TrainingSeason 연습시즌 dp 동적계획법 메모이제이션 memoization
 excerpt: Training Season
 mathjax : false
 ---
