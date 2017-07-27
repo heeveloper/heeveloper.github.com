@@ -11,7 +11,7 @@ type: page
 
 ## Algorithms
 This pages mainly handle algorithm problems presented in the book **"프로그래밍 대회에서 배우는 알고리즘 문제해결전략"** and other websites such as **백준온라인(BOJ)** or **SCPC**. If you implement your code, it can be tested by [Algospot](https://algospot.com), [BOJ](https://www.acmicpc.net/) and [SCPC](https://www.codeground.org/main.do).
-<br> Here are problems what I dealt with.
+<br> Here are problems I dealt with.
 
 * QUADTREE
 * FENCE
