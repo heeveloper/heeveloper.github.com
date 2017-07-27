@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sorting Game"
-date:   2017-07-20 15:28:22
+date:   2017-07-22 15:28:22
 author: Heeveloper
 categories: Algorithm
 tags: 프로그래밍대회에서배우는알고리즘문제해결전략 Algospot 알고스팟 SORTGAME graph 너비우선탐색 bfs

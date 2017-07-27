@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "징검다리"
-date:   2017-07-20 15:28:22
+date:   2017-07-26 15:28:22
 author: Heeveloper
 categories: Algorithm
 tags: SCPC 예선문제 징검다리 dp 동적계획법 점화식 메모이제이션 memoization
