@@ -118,50 +118,44 @@ int main( ) {
 
 ~~~c++
 #include <iostream>
-#include <cstdio>
-#include <memory.h>
 #include <algorithm>
 
 using namespace std;
 
+int T, N;
 int a[10002];
 int b[10002];
 int dp[10002];
 
 int main()
 {
-    int tcase;
-    scanf("%d", &tcase);
+    cin >> T;
 
-    for (int tc = 1; tc <= tcase; tc++)
+    for (int tc = 1; tc <= T; tc++)
     {
-        int n;
-        scanf("%d", &n);
+        cin >> N;
 
         memset(a, 0, sizeof(a));
         memset(b, 0, sizeof(b));
         memset(dp, 0, sizeof(dp));
 
-        for (int i = 1; i <= n; i++)
-            scanf("%d", &a[i]);
-        for (int i = 1; i <= n; i++)
-            scanf("%d", &b[i]);
+        for (int i = 1; i <= N; i++)
+            cin >> a[i];
+        for (int i = 1; i <= N; i++)
+            cin >> b[i];
 
         dp[1] = max(a[1], b[1]);
         dp[2] = max({ a[1] + a[2],b[1] + a[2], b[2] });
 
-        for(int i = 3; i <= n; i++)
+        for(int i = 3; i <= N; i++)
             dp[i] = max(dp[i - 2] + b[i], dp[i - 1] + a[i]);
 
-        printf("Case #%d\n%d\n", tc, dp[n]);
+        cout << "Case #" << tc << endl << dp[N] << endl;
     }
-
     return 0;
 }
 
 ~~~
-
-출처: http://www.crocus.co.kr/917 [Crocus]
 
 ---
 ## 6. Feedback
