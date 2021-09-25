@@ -7,7 +7,7 @@
 
 # Site settings
 title: Heeveloper
-brief-intro: Self-taught Developer
+brief-intro: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://heeveloper.github.io" # the base hostname & protocol for your site
 
@@ -53,5 +53,6 @@ tag_dir: tag/
 excerpt_separator: "\n\n\n\n"
 
 # paginate
+plugins: [jekyll-paginate]
 gems: [jekyll-paginate]
 paginate: 6
