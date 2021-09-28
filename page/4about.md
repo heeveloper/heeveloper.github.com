@@ -1,38 +1,17 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 icon: heart
 type: page
 ---
 
-* content
-{:toc}
 
-### Heeveloper
+### Heejun Lee 👋
 
- Computer Science Engineer   
+ - Kakao Business 백엔드 개발 (2020.01 ~ )
+ - Email : heeveloper@gmail.com
+ - Github : [https://github.com/heeveloper](https://github.com/heeveloper)
+ - Linkedin : [https://www.linkedin.com/in/heejun-lee-116a51124/](https://www.linkedin.com/in/heejun-lee-116a51124/)
 
-
----
-
-### Contact
-
-* email : [zaqq1414@gmail.com](mailto:zaqq1414@gmail.com)
-* Kakao : qazz1414
-* Line : qazz1414
-* Github : [Heeveloper](https://heeveloper.github.com)
-
----
-
-### Develography  
-
- 2017.01 | Default<br>
- 2015.05 | Default<br>
- 2012.07 | Default<br>
- 2012.03 | Default<br>
- 1992.10 | Default
-
----
-
-{% include comments.html %}
+--- 
