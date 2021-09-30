@@ -35,6 +35,7 @@ layout: default
         </article>
         <hr>
 
+        {% include adsense_display.html %}
         {% assign hasSimilar = '' %}
         {% for post in site.related_posts %}
             {% assign postHasSimilar = false %}
@@ -84,6 +85,9 @@ layout: default
                     {% endif %}
                     <li><a href="#comments">Comments</a></li>
                 </ul>
+            </div>
+            <div class="side ad">
+                {% include adsense_display.html %}
             </div>
             <!-- 其他div框放到这里 -->
             <!-- <div class="side">bbbb</div> -->

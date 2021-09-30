@@ -26,6 +26,8 @@ RabbitMQ는 **AMQP**를 구현한 오픈소스 메세지 브로커인데, 메세
 
 <img src="/img/MessageQueue/amqp-and-rabbitmq.png" width="700" height="370">
 
+{% include adsense_content.html %}
+
 ## 주요 개념
 
 RabbitMQ는 아래 AMQP의 주요 개념을 구현하였습니다.
@@ -47,7 +49,6 @@ RabbitMQ는 아래 AMQP의 주요 개념을 구현하였습니다.
   - Headers Type : [key:value]로 이뤄진 headers 값을 기준으로 일치하는 Queue에 메세지 전송 (Multicast)
   - Fanout Type : 해당 Exchnage에 등록된 모든 Queue에 메세지 전송 (Broadcast)
 - Binding : Exchnage로 전달된 메세지는 Exchnage type에 추가로  Binding 규칙에 따라 Queue들에게 발송.
-
 
 
 ## Exchnage 4가지 타입
@@ -87,7 +88,7 @@ Headers Exchnage는 Topic Exchnage와 유사하지만 라우팅을 위해 header
 
 <img src="/img/MessageQueue/fanout.png">
 
-
+{% include adsense_content.html %}
 
 ## MQ 및 Message 보존
 
@@ -148,5 +149,4 @@ RabbitMQ는 Channel 이라는 개념을 통해 하나의 TCP 연결을 공유해
 - https://nesoy.github.io/articles/2019-02/RabbitMQ
 - https://jonnung.dev/rabbitmq/2019/02/06/about-amqp-implementtation-of-rabbitmq/
   
-
   <br>
