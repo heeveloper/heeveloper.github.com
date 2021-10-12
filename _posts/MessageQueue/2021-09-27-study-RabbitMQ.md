@@ -88,7 +88,9 @@ Headers Exchnage는 Topic Exchnage와 유사하지만 라우팅을 위해 header
 
 <img src="/img/MessageQueue/fanout.png">
 
+
 {% include adsense_content.html %}
+
 
 ## MQ 및 Message 보존
 
