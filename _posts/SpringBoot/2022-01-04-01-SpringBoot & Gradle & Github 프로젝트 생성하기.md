@@ -21,7 +21,7 @@ mathjax : false
 이 글은 그런 에러들을 먼저 경험해보고 해결 방법을 찾아낸 입장으로서, 최신 버전의 SpringBoot에 기반하여 개발 및 배포하는 내용을 담고있습니다.
 (+ 최신 AWS 인터페이스 및 환경 설정은 덤)
 
-프로젝트 코드는 [Github](https://github.com/heeveloper/springboot-webservice)에 업로드되어 있으며, 본 세션의 코드는 브랜치 [chapter2](https://github.com/heeveloper/springboot-webservice/tree/chapter1)에서 작업하였습니다.
+프로젝트 코드는 [Github](https://github.com/heeveloper/springboot-webservice)에 업로드되어 있으며, 본 세션의 코드는 브랜치 [chapter1](https://github.com/heeveloper/springboot-webservice/tree/chapter1)에서 작업하였습니다.
 
 
 ## 개발 환경
