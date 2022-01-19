@@ -129,6 +129,10 @@ JPA에선 Repository라고 부르고 ibatis/MyBatis 등에선 DAO라고 부르�
 PostRepositoryTest.java
 
 ~~~java
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
+
+
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
 public class PostRepositoryTest {
@@ -171,11 +175,6 @@ JUnit5는 spring-boot-starter-test에 들어있기 때문에 별도로 build.gra
 
 - `assetThat`
 	- 결과값 비교에 사용되는 메서드로 `spring-boot-starter-test` 라이브러리에 포함되어 있는 `Hamcrest`에서 제공하는 기능입니다.
-	- 자동 resolved가 되지 않는 경우 따로 import하여 사용하면 됩니다.
-  	~~~java
-  	import static org.hamcrest.MatcherAssert.assertThat;
- 		import static org.hamcrest.Matchers.*;
-  	~~~
 
 <br>
 아래와 같이 테스트 메소드 `게시글저장_불러오기()`를 실행시켜 테스트 코드가 통과했음을 확인 할 수 있습니다 👍
@@ -191,7 +190,7 @@ JUnit5는 spring-boot-starter-test에 들어있기 때문에 별도로 build.gra
 
 {% include adsense_content.html %}
 
-## 2-3 Controller & DTO 구현
+## 2-3 Controller & Service & DTO 구현
 
 아래와 같이 post에 대한 `controller 패키지`와 `service 패키지`를 생성해줍니다.  
 사실 이정도 작은 규모의 프로젝트에는 이러한 패키징이 크게 필요는 없지만 최대한 DDD 관점에서 패키지를 나누었습니다. 
@@ -229,7 +228,11 @@ public class PostService {
 }
 ~~~
 
-보시면 `postService`와 `postRepository` 필드에 `@Autowired`가 없습니다.  
+위의 PostService는 DDD에서 **응용서비스 계층(Application Service Layer)**에 속하는데요, 간단하게 말하면 표현 영역과 도메인 영역을 연결해주는 창구 역할을 해준다고 볼 수 있습니다.  
+(자세한 내용이 궁금하시면 [DDD Start 6장. 응용서비스와 표현 영역](https://heeveloper.github.io/2020/07/22/06-%EC%9D%91%EC%9A%A9-%EC%84%9C%EB%B9%84%EC%8A%A4%EC%99%80-%ED%91%9C%ED%98%84-%EC%98%81%EC%97%AD/)을 참고해주세요😀)
+
+
+또한 `postService`와 `postRepository` 필드에 `@Autowired`가 없습니다.  
 스프링프레임워크에선 Bean을 주입하는 방식이 아래와 같이 있는데요,
 
 - `@Autowired`
