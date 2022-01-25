@@ -34,7 +34,7 @@ Post.java
 public class Post {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(length = 500, nullable = false)
@@ -71,6 +71,7 @@ JPA를 사용하면 DB 데이터에 작업할 경우 쿼리를 사용하기 보�
 - `@GeneratedValue`
 	- PK 생성 규칙을 나타냅니다.
 	- 기본값은 AUTO이며, MySQL의 auto_increment와 같이 자동증가하는 정수형 값이 됩니다.
+    - GenerationType.IDENTITY 옵션을 주어 데이터베이스에 위임(MySQL) 하였습니다.
 	- **SpringBoot 2.0**부터는 해당 옵션 추가해야 auto_increment가 됩니다!
 
 - `@Column`
