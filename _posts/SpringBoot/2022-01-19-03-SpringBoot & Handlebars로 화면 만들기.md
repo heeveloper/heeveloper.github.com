@@ -583,8 +583,8 @@ public class WebController {
 
 <img src="/img/SpringbootWebService/3-9.png">
 
-글 등록 기능을 통해 데이터가 추가되는 것을 확인해보세요
-
+<br>
+이제 최종적으로 localhost:8080에서 글 등록 기능을 통해 데이터가 추가되는 것을 확인해보세요!
 
 
 ## 마무리
