@@ -265,7 +265,9 @@ AddPostRequestDto.java
 ~~~java
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
+@AllArgsConstructor
 public class AddPostRequestDto {
     private String title;
     private String author;
@@ -290,6 +292,53 @@ public class AddPostRequestDto {
 > Entity 클래스의 변경은 곧 비즈니스 로직 변경이라는 큰 의미를 가진 반면, Request/Response 클래스는 View를 위한 클래스이기 때문에 가볍게 자주 변경될 수 있습니다.
 >
 > 따라서 View Layer와 Domain Layer는 철저하게 역할을 분리하는 것이 좋습니다.
+
+Service 메소드가 추가되었으니, 잘 작동하는지 간단한 테스트 코드를 작성하여 검증해보겠습니다.
+
+src/test/java/com/heeveloper/webservice/service 패키지를 생성 후, PostServiceTest 클래스를 생성합니다.
+
+~~~java
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
+
+
+@ExtendWith(SpringExtension.class)
+@SpringBootTest
+public class PostServiceTest {
+
+    @Autowired
+    private PostService postService;
+
+    @Autowired
+    private PostRepository postRepository;
+
+    @AfterEach
+    public void cleanup() {
+        postRepository.deleteAll();
+    }
+
+    @Test
+    public void Dto데이터가_posts테이블에_저장된다 () {
+        // given
+        AddPostRequestDto dto = AddPostRequestDto.builder()
+                .author("heeveloper")
+                .content("테스트content")
+                .title("테스트title")
+                .build();
+
+        // when
+        postService.add(dto);
+
+        // then
+        Post post = postRepository.findAll().get(0);
+        assertThat(post.getAuthor(), is("heeveloper"));
+        assertThat(post.getContent(), is("테스트content"));
+        assertThat(post.getTitle(), is("테스트title"));
+    }
+}
+~~~
+
+<img src="/img/SpringbootWebService/3-5.png">
 
 ## 2-4 Postman + 웹 콘솔로 검증
 
