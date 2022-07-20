@@ -30,7 +30,7 @@ mathjax : false
 이러한 AOP의 방식은 크게 2가지가 있다.
 
 ### 2-1. JDK Dynamic Proxy
-<img src="/img/spring/transactional/Proxy-pattern.svg.png">  
+<img src="/img/Spring/Transactional/Proxy-pattern.svg.png">
 <br>
 트랜잭션 처리를 본래 클래스의 객체가 아닌 **Dynamic Proxy 객체**에 위임하는 방식이다.  
 이 때 Dynamic Proxy 객체는 타겟이 상속하는 Interface를 상속 후 추상메서드를 구현하여 내부적으로 타겟 메서드 호출 전/후에 트랜잭션 처리를 수행한다.  
@@ -65,7 +65,7 @@ application 파일을 보면 기본적으로 `proxy-target` 값이 true로 설�
 4. Bean 후처리기는 위 Bean을 프록시 객체로 치환한다.
 5. Client는 실제로 프록시 객체를 주입받고, 프록시 개체의 메서드를 호출한다.  
 <br>
-<img src="/img/spring/transactional/proxy.png">
+<img src="/img/Spring/Transactional/Proxy.png">
 
 
 > **중요**  
